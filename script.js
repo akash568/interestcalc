@@ -15,14 +15,17 @@ function compute()
     if(p=="" || r=="" || y==""){
         alert("Please Enter Valid Value!")
         w.focus();
+        X.style.padding="50px 100px 33px 100px";
     }
     else if(p==0 || r==0 || y==0){
         alert("Zero Is Not A Valid Number Please Enter +ve Number!")
         w.focus();
+        X.style.padding="50px 100px 33px 100px";
     }
     else if(p<0 || r<0 || y<0){
         alert("Please Enter +ve Number!")
         w.focus();
+        X.style.padding="50px 100px 33px 100px";
     }
     else{
         Z.innerHTML="<p>If You Diposit "+p+",</p>"+"<p>At An Interest Rate Of "+r+"%.</p>"+"<p>You Will Recive An Amount Of "+totalInt+",</p>"+"<p>In the Year "+totalY+".</p>";
